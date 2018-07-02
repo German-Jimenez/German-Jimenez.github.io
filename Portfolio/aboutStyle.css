@@ -1,0 +1,36 @@
+#grad {
+    background: linear-gradient(to right,  hotpink , cyan);
+}
+#nav {
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    border-radius: 25px;
+    padding: 20px; 
+    width: 50%;
+    height: 10px;
+    background: linear-gradient(to left, hotpink, cyan);
+    float:right;
+}
+#h1 {
+    font-size: 50px;
+    color: black;
+}
+p {
+   float:left;
+    width: 850px;
+    padding: 10px;
+    margin: .5em;
+}
+#nav {
+    color:black
+}
+#life {
+    height: 200px;
+    width:  300px;
+}
+#div1{
+    background: linear-gradient(to right, cyan, hotpink);
+    border: solid;
+    padding: 30px;
+} 

@@ -14,7 +14,16 @@
 }
 h1{
     color:black;
+    font-family: 'Kalam', cursive;
+    font-size: 40px;
 }
 nav {
-    color:black
+    color:black;
+    font-family: 'Kalam', cursive;
+}
+#google-form{
+    border: solid;
+}
+a{
+    color: white;
 }

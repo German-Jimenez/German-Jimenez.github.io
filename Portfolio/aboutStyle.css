@@ -1,36 +1,42 @@
-#grad {
-    background: linear-gradient(to right,  hotpink , cyan);
+#backround{
+    background:#EFEFFA;
 }
 #nav {
-    color: white;
     font-size: 20px;
     text-align: right;
     border-radius: 25px;
     padding: 20px; 
     width: 50%;
     height: 10px;
-    background: linear-gradient(to left, hotpink, cyan);
+    background-color: #90CED1;
     float:right;
+    font-family: 'Kalam', cursive;
 }
 #h1 {
-    font-size: 50px;
-    color: black;
+    font-size: 40px;
+    color:#435877;
+    font-family: 'Kalam', cursive;
 }
 p {
    float:left;
     width: 850px;
     padding: 10px;
     margin: .5em;
-}
-#nav {
-    color:black
+    font-family: 'Kalam', cursive;
+    color: #435A76;
 }
 #life {
     height: 200px;
     width:  300px;
+    border:1px solid black;
+    border-radius: 50px
 }
 #div1{
-    background: linear-gradient(to right, cyan, hotpink);
+    border-color:#90CED1;
     border: solid;
-    padding: 30px;
+    padding: 10px;
+    border-radius: 50px
 } 
+a{
+    color: #435A76;
+}

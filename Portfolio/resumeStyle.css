@@ -1,5 +1,5 @@
-#grad {
-    background: linear-gradient(to right,  hotpink , cyan);
+#backround{
+    background:#EFEFFA;
 }
 #nav {
     color: white;
@@ -9,13 +9,21 @@
     padding: 20px; 
     width: 50%;
     height: 10px;
-    background: linear-gradient(to left, hotpink, cyan);
+    background-color: #90CED1;
     float:right;
 }
 #h1 {
-    font-size: 50px;
-    color: black;
+    font-size: 40px;
+    color:#435A76;
+    font-family: 'Kalam', cursive;
 }
 nav {
-    color:black
+    font-family: 'Kalam', cursive;    
+}
+#resume{
+    border: solid;
+    border-color: #1C1D1F;
+}
+a{
+    color: #435A76;
 }

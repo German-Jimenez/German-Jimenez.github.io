@@ -1,40 +1,34 @@
-#grad {
-    background: linear-gradient(to right,  hotpink , cyan);
-}
-#nav {
-    color: white;
-    font-size: 20px;
-    text-align: right;
-    border-radius: 25px;
-    padding: 15px;
-    width: 50%;
-    height: 10px;
-    background: linear-gradient(to left, hotpink, cyan);
-    float:right;
-    width: 500px;
-    height: 15px;
-    position: relative;
-    animation-name: nav1;
-    animation-duration: 1s;
-  }
-@keyframes nav1 {
-    0%    {width: 100px; height: 100px; left:20 0px; top:0px;}
-    25%  {width; 100px; height: 100px; left:0px; top:0px;}
-    50%  {width: 100px; height: 100px; left:0px; top:0px;}
-    75%  {width: 100px; height: 100px; left:0px; top:0px;}
-    100% {width: 500px; height: 15px; left:0px; top:0px;}
+#background{
+    background-color:#EFEFFA;
 }
 #h1 {
-    font-size: 50px;
-    color: black;
-}
+    font-size: 40px;
+    color: #435877;
+    font-family: 'Kalam', cursive;
+    width:200px;
+ }
 #p1 {
     font-size: 30px ;
-    color: floralwhite;
-    font-family: 'Shadows Into Light', cursive;
+    color: #435A76;
+    font-family: 'Kalam', cursive;
 }
 #p2 {
     font-size: 30px;
-    color: floralwhite;
-    font-family: 'Shadows Into Light', cursive;
+    color: #435A76;
+    font-family: 'Kalam', cursive;
+}
+a{
+    color: #435A76;
+}
+nav :hover{
+    color:#92C9CE;
+} 
+.button1{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border-style: solid;
+    border-radius: 100px;
+    width: 100px;
+    float:right;
 }

@@ -12,10 +12,15 @@
     background: linear-gradient(to left, hotpink, cyan);
     float:right;
 }
-#h1 {
-    font-size: 50px;
+h1 {
+    font-size: 40px;
     color: black;
+    font-family: 'Kalam', cursive;
 }
 nav {
-    color:black
+    color:black;
+    font-family: 'Kalam', cursive;    
+}
+a{
+    color: white;
 }

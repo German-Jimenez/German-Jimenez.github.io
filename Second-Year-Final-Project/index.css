@@ -1,4 +1,10 @@
+img {
+	float: right;
+}
     
+
+
+
 body{
 	
 	background-color: rgb(255,255,255);
@@ -60,6 +66,18 @@ font-size: 15px;
   	font-family: 'Literata', serif;
   	width: 50%;
 }
+
+#graph{
+text-align: left;
+	font-size: 25px;
+	font-family: 'Literata', serif;
+	
+}
+
+#graph{
+	float: left;
+}
+
 
 /* Add a black background color to the top navigation */
 .topnav {

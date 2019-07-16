@@ -10,6 +10,9 @@ var button6;
 var button7;
 var button8;
 
+//Buttons For Directions
+var button9;
+
 //Arrays with Information
 var Location = ["Los Angeles,CA", "Bay Area,CA", "New York,NY","Portland,OR","Seattle,WA","Dallas,TX","Columbus,OH","Salt Lake City,UT"]
 var Quality = ["Good", "Moderate", "USG", "Unhealthy", "Very Unhealthy", "Hazardous"]
@@ -21,28 +24,31 @@ function setup(){
 	img = loadImage('usa-map.png');
 	//Los Angeles Button
 	button = createButton('Los Angeles');
-	button.position(45,430);
+	button.position(45,470);
 	//Bay Area Button
 	button2 = createButton('Bay Area');
-	button2.position(30,350);
+	button2.position(30,390);
 	//New York Button
 	button3 = createButton('New York');
-	button3.position(800,290);
+	button3.position(800,340);
 	//Portland Button
 	button4 = createButton('Portland');
-	button4.position(70,185);
+	button4.position(70,225);
 	//Seattle Button
 	button5 = createButton('Seattle');
-	button5.position(80,130);
+	button5.position(80,180);
 	//Dallas Button
 	button6 = createButton('Dallas');
-	button6.position(440,510);
+	button6.position(440,560);
 	//Columbus Button
 	button7 = createButton('Columbus');
-	button7.position(640,320);
+	button7.position(640,370);
 	//Salt Lake City Button
 	button8 = createButton('Salt Lake City');
-	button8.position(190,300);
+	button8.position(190,340);
+	//Direction Button
+	button9 = createButton('Directions');
+	button9.position(853,693);
 }
 
 function draw(){
@@ -87,6 +93,10 @@ function mousePressed(){
 	if(mouseX > 183 && mouseX < 280 && mouseY > 183 && mouseY < 203){
 		test(7,0,0);
 	}
+	//Direction Buttons
+	if(mouseX > 847 && mouseX < 919 & mouseY > 530 && mouseY < 546){
+		direction();
+	}
 } 
 
 //L is equal to Location, Q is equal to Quality, C is equal to Color, Q and C should be same number
@@ -104,4 +114,12 @@ function test(L,Q,C){
 	text('Air Quality:', 840, 460);
 	fill(Color[C]);
 	text(Quality[Q],840,480);
+}
+
+function direction(){
+	fill('black');
+	textSize(30);
+	text('Directions:', 400, 200);
+	text('Hover over one of the cities', 400, 250);
+	text('to see information of the local Air Quality', 400, 280);
 }

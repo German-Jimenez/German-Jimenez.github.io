@@ -1,0 +1,90 @@
+    
+body{
+	
+	background-color: rgb(255,255,255);
+       
+}
+#logo{
+	border-top:0px;
+	font-size: 50px;
+	font-family: 'Literata', serif;
+	color: #a2c3a4;
+}
+#paragraph {
+  text-align: left;
+  font-size: 15px;
+   font-family: 'Literata', serif;
+   width: 50%;
+}
+#carbon {
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Literata', serif;
+}
+
+#information {
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Literata', serif;
+	
+}
+#ways{
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Literata', serif;
+}
+
+#list{
+		font-family: 'Literata', serif;
+		text-align: center;
+		width: 100%;
+
+}
+#effects{
+	font-size: 15px;
+  	font-family: 'Literata', serif;
+  	width: 50%;
+  
+}
+
+
+#danger{
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Literata', serif;
+	
+}
+
+#dangereffects{
+font-size: 15px;
+  	font-family: 'Literata', serif;
+  	width: 50%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}

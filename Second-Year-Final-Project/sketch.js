@@ -1,5 +1,12 @@
 var img;
 
+//Time API url's
+var time;
+var urlPDT = 'http://api.timezonedb.com/v2.1/get-time-zone?key=ZN8IO9IUWGJM&format=json&by=zone&zone=America/Los_Angeles';
+var urlMDT = 'http://api.timezonedb.com/v2.1/get-time-zone?key=ZN8IO9IUWGJM&format=json&by=zone&zone=America/Denver';
+var urlCDT = 'http://api.timezonedb.com/v2.1/get-time-zone?key=ZN8IO9IUWGJM&format=json&by=zone&zone=America/Chicago';
+var urlEDT = 'http://api.timezonedb.com/v2.1/get-time-zone?key=ZN8IO9IUWGJM&format=json&by=zone&zone=America/New_York';
+
 //Buttons for the Cities
 var button;
 var button2;
@@ -51,47 +58,63 @@ function setup(){
 	button9.position(853,693);
 }
 
+//Converts the Data into a var
+function gotData(data){
+	console.log(data);
+	time = data;
+}
+
 function draw(){
 	image(img, 0, 0);
   	mousePressed();
+  	//Get Rid of before Presenting
 	fill("Salmon");
   	textSize(16);
   	textAlign(CENTER);
   	text("(" + floor(mouseX) + ", " + floor(mouseY) + ")", mouseX, mouseY);
 }
 
+//Gives button Hover Effect
 function mousePressed(){
 	//Los Angeles Button
 	if(mouseX > 38 && mouseX < 125 && mouseY > 314 && mouseY < 333){
 		test(0,3,3);
+		loadJSON(urlPDT,gotData);
 	}
 	//Bay Area Button
 	if(mouseX > 23 && mouseX < 90 && mouseY > 235 && mouseY < 250){
 		test(1,0,0);
+		loadJSON(urlPDT,gotData);
 	}
 	// //New York Button
 	if(mouseX > 792 && mouseX < 863 && mouseY > 174 && mouseY < 194){
 		test(2,0,0);
+		loadJSON(urlEDT,gotData);
 	}
 	//Portland Button
 	if(mouseX > 62 && mouseX < 127 && mouseY > 69 && mouseY < 87){
 		test(3,0,0);
+		loadJSON(urlPDT,gotData);
 	}
 	//Seattle Button
 	if(mouseX > 73 && mouseX < 129 && mouseY > 14 && mouseY < 34){
 		test(4,0,0);
+		loadJSON(urlPDT,gotData);
 	}
 	//Dallas Button
 	if(mouseX > 432 && mouseX < 484 && mouseY > 394 && mouseY < 414){
 		test(5,0,0);
+		loadJSON(urlCDT,gotData);
 	}
 	//Columbus Button
 	if(mouseX > 633 && mouseX < 707 && mouseY > 204 && mouseY < 224){
 		test(6,0,0);
+		loadJSON(urlEDT,gotData);
 	}
 	//Salt Lake City Button
 	if(mouseX > 183 && mouseX < 280 && mouseY > 183 && mouseY < 203){
 		test(7,0,0);
+		loadJSON(urlMDT,gotData);
 	}
 	//Direction Buttons
 	if(mouseX > 847 && mouseX < 919 & mouseY > 530 && mouseY < 546){
@@ -105,17 +128,25 @@ function test(L,Q,C){
 	rect(790, 340, 100, 150);
 	fill('black');
 	text(Location[L], 840,360);
-	text("Local Time",840,380);
+	text('Local Time',840,380);
+	if(time){
+    	var T = time.formatted + time.abbreviation;
+    	fill(0);
+    	textSize(15);
+    	text(T, 840, 400);
+   		console.log(T);
+	}
 	fill('red');
-	text("Co2 Levels:",840,420);
-	fill("black");
-	text("N/A", 840,440);
+	text('Co2 Levels:',840,420);
+	fill('black');
+	text('N/A', 840,440);
 	fill('red');
 	text('Air Quality:', 840, 460);
 	fill(Color[C]);
 	text(Quality[Q],840,480);
 }
 
+//Directions Button
 function direction(){
 	fill('black');
 	textSize(30);

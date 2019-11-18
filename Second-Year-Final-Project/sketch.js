@@ -88,7 +88,7 @@ function mousePressed(){
 	}
 	// //New York Button
 	if(mouseX > 792 && mouseX < 863 && mouseY > 174 && mouseY < 194){
-		test(2,0,0);
+		test(2,3,3);
 		loadJSON(urlEDT,gotData);
 	}
 	//Portland Button
